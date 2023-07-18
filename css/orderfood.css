@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url("../img/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.middle {
+    justify-content: center;
+    align-content: center;
+}
+
+/********************* header *********************/
+header {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 35%;
+
+    background-color: #080808;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon>a {
+    width: 30%;
+}
+
+/* 587x563 */
+.icon>a>img {
+    width: 100%;
+}
+
+.store_name {
+    display: flex;
+}
+
+.store_name>p {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-size: 3vw;
+    text-align: center;
+
+    color: #ffffff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* .header_function {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_function>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    width: 6vw;
+}
+
+.header_function>li>a {
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 5vw;
+}
+
+.header_function>li>a:hover {
+    background-color: #1C1C1C;
+}
+
+.header_function>li>a>p {
+    font-size: 1.2vw;
+    color: #ffffff;
+    font-family: 'Noto Serif TC', serif;
+} */
+
+/********************* 內文 *********************/
+.MENU {
+    text-align: center;
+
+    padding: 7.5% 0 3% 0;
+    height: 5%;
+
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+.Tables {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+}
+
+.crad {
+    display: grid;
+    grid-template-rows: 75% 25%;
+
+    margin: 10% auto 10% auto;
+
+    width: 70%;
+
+    background-color: #252525;
+
+    border: 0.1vw solid rgb(255, 255, 255);
+    border-radius: 15%;
+}
+
+.crad_img>img {
+    height: 100%;
+
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+.crad_word {
+    display: grid;
+    grid-template-columns: 45% 45%;
+
+    margin: 0 5%;
+}
+
+.crad_word_left {
+    display: grid;
+}
+
+
+.crad_word_left>p {
+    display: grid;
+    text-align: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.5vw;
+    color: #ffffff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.crad_word_right {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.add_sub {
+    background-color: #000000;
+}
+
+.add_sub:hover {
+    background-color: #afafaf;
+    cursor: pointer;
+}
+
+.add_sub:active {
+    background-color: #414141;
+    transform: translateY(10%);
+}
+
+.crad_word_right>form {
+    display: grid;
+}
+
+.crad_word_right>input {
+    text-align: center;
+
+    font-size: 100%;
+    color: #ffffff;
+    font-family: 'Noto Sans TC', sans-serif;
+
+    border-color: rgb(206, 206, 206);
+    background-color: #252525;
+}
+
+/********************* SEASONING *********************/
+.SEASONING {
+    text-align: center;
+
+    margin-top: 3%;
+    height: 5%;
+
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+.radio {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+    margin: 5% auto;
+
+    width: 50%;
+    height: 6vh;
+
+    font-size: 1.5vw;
+    color: #ffffff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+label {
+    padding: 0 10%;
+    height: 100%;
+}
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio input:checked+.button {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    height: 100%;
+
+    border: 0.1vw solid rgb(0, 0, 0);
+    border-radius: 5%;
+
+    background: #5e7380;
+    color: #fff;
+    /* cursor: default; */
+}
+
+.button {
+    display: grid;
+
+    height: 100%;
+
+    border: 0.1vw solid rgb(0, 0, 0);
+    border-radius: 5%;
+
+    background: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #bbb;
+    color: #fff;
+}
+
+/********************* 送出 *********************/
+
+.content {
+    margin: 0 auto;
+    margin-top: 8%;
+    padding-bottom: 2%;
+
+    text-align: center;
+    width: 6vw;
+}
+
+input[type=submit] {
+    background-color: #3a1a91;
+    color: rgb(253, 253, 253);
+    border: none;
+    border-radius: 5%;
+    font-size: 2vw;
+    cursor: pointer;
+
+    border: 0.2vw solid rgb(0, 0, 0);
+    border-radius: 5%;
+}
+
+/********************* footer *********************/
+
+footer {
+
+    padding: 2% 0;
+    background-color: rgb(0, 0, 0);
+}
+
+footer>p {
+    text-align: center;
+
+    font-size: 1.5vw;
+    color: #ffffff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
