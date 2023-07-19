@@ -19,39 +19,43 @@ body {
     align-content: center;
 }
 
+.crad_img_set {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
 /********************* header *********************/
 header {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
-    height: 35%;
+    grid-template-columns: 2fr 6fr 2fr;
+
+    height: 80px;
 
     background-color: #080808;
 }
 
 .icon {
-    display: flex;
-}
-
-.icon>a {
-    width: 30%;
+    display: grid;
 }
 
 /* 587x563 */
 .icon>a>img {
-    width: 100%;
+    width: 90px;
+    height: 80px;
 }
 
 .store_name {
-    display: flex;
+    display: grid;
 }
 
 .store_name>p {
-    margin-top: auto;
-    margin-bottom: auto;
-
-    font-size: 3vw;
     text-align: center;
 
+    font-size: 2.4rem;
     color: #ffffff;
     font-family: 'Noto Sans TC', sans-serif;
 }
@@ -93,48 +97,69 @@ header {
     font-family: 'Noto Serif TC', serif;
 } */
 
-/********************* 內文 *********************/
+/********************* 菜單 *********************/
 .MENU {
     text-align: center;
 
-    padding: 7.5% 0 3% 0;
-    height: 5%;
+    padding: 70px 0 35px 0;
 
-    font-size: 3vw;
+
+    font-size: 2rem;
     color: #ffffff;
 }
 
 .Tables {
     display: grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+
+    width: 70%;
 }
 
 .crad {
     display: grid;
-    grid-template-rows: 75% 25%;
+    grid-template-rows: 3fr 1fr;
 
-    margin: 10% auto 10% auto;
+    margin: 30px auto;
 
-    width: 70%;
+    width: 220px;
+    height: 300px;
 
     background-color: #252525;
 
-    border: 0.1vw solid rgb(255, 255, 255);
-    border-radius: 15%;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 30px;
 }
 
-.crad_img>img {
-    height: 100%;
+.crad_chicken_img {
+    background-image: url("../img/chicken.jpg");
+}
 
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
+.crad_sweetfood_img {
+    background-image: url("../img/sweetfood.jpg");
+}
+
+.crad_FrenchFries_img {
+    background-image: url("../img/FrenchFries.jpg");
+}
+
+.crad_bloodcake_img {
+    background-image: url("../img/bloodcake.jpg");
+}
+
+.crad_vegetable_img {
+    background-image: url("../img/vegetable.jpg");
+}
+
+.crad_mushroom_img {
+    background-image: url("../img/mushroom.jpg");
 }
 
 .crad_word {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: repeat(2, 1fr);
 
-    margin: 0 5%;
+    padding: 0 5%;
 }
 
 .crad_word_left {
@@ -150,18 +175,20 @@ header {
     width: 100%;
     height: 100%;
 
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     color: #ffffff;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
 .crad_word_right {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .add_sub {
     background-color: #000000;
+    width: 100%;
+    height: 30px;
 }
 
 .add_sub:hover {
@@ -181,7 +208,10 @@ header {
 .crad_word_right>input {
     text-align: center;
 
-    font-size: 100%;
+    width: 100%;
+    height: 30px;
+
+    font-size: 1rem;
     color: #ffffff;
     font-family: 'Noto Sans TC', sans-serif;
 
@@ -193,30 +223,28 @@ header {
 .SEASONING {
     text-align: center;
 
-    margin-top: 3%;
-    height: 5%;
+    margin-top: 35px;
 
-    font-size: 3vw;
+    font-size: 2rem;
     color: #ffffff;
 }
 
 .radio {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
 
-    margin: 5% auto;
+    margin: 60px auto;
 
     width: 50%;
-    height: 6vh;
+    height: 40px;
 
-    font-size: 1.5vw;
+    font-size: 1.3rem;
     color: #ffffff;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
 label {
     padding: 0 10%;
-    height: 100%;
 }
 
 .radio input[type="radio"] {
@@ -228,10 +256,10 @@ label {
     justify-content: center;
     align-content: center;
 
-    height: 100%;
+    height: 40px;
 
-    border: 0.1vw solid rgb(0, 0, 0);
-    border-radius: 5%;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 10px;
 
     background: #5e7380;
     color: #fff;
@@ -241,10 +269,10 @@ label {
 .button {
     display: grid;
 
-    height: 100%;
+    height: 40px;
 
-    border: 0.1vw solid rgb(0, 0, 0);
-    border-radius: 5%;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 10px;
 
     background: #f7f7f7;
     color: #333;
@@ -260,37 +288,281 @@ label {
 
 .content {
     margin: 0 auto;
-    margin-top: 8%;
-    padding-bottom: 2%;
+    margin-top: 110px;
+    padding-bottom: 20px;
 
     text-align: center;
-    width: 6vw;
+    width: 6%;
 }
 
 input[type=submit] {
-    background-color: #3a1a91;
+    height: 40px;
+
+    background-color: #a01d1d;
     color: rgb(253, 253, 253);
-    border: none;
-    border-radius: 5%;
-    font-size: 2vw;
+    font-size: 1.5rem;
     cursor: pointer;
 
-    border: 0.2vw solid rgb(0, 0, 0);
-    border-radius: 5%;
+    border: 1.5px solid rgb(0, 0, 0);
 }
 
 /********************* footer *********************/
 
 footer {
 
-    padding: 2% 0;
+    padding: 15px 0;
     background-color: rgb(0, 0, 0);
 }
 
 footer>p {
     text-align: center;
 
-    font-size: 1.5vw;
+    font-size: 1rem;
     color: #ffffff;
     font-family: 'Noto Sans TC', sans-serif;
+}
+
+/********************* 響應式網頁 *********************/
+@media (max-width:1000px) {
+
+    /********************* header *********************/
+    .icon>a>img {
+        width: 60px;
+        height: 70px;
+    }
+
+    .store_name>p {
+        text-align: center;
+
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    /********************* 菜單 *********************/
+    .MENU {
+        text-align: center;
+
+        padding: 50px 0 30px 0;
+
+        font-size: 90%;
+        color: #ffffff;
+    }
+
+    .Tables {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+
+        width: 100%;
+    }
+
+    .crad {
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+
+        margin: 30px auto;
+
+        width: 154px;
+        height: 210px;
+
+        background-color: #252525;
+
+        border: 1.5px solid rgb(255, 255, 255);
+        border-radius: 30px;
+    }
+
+    .crad_word_left>p {
+        display: grid;
+        text-align: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+
+        font-size: 1rem;
+        color: #ffffff;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .add_sub {
+        background-color: #000000;
+        width: 100%;
+        height: 25px;
+    }
+
+    .crad_word_right>input {
+        text-align: center;
+
+        width: 100%;
+        height: 25px;
+
+        font-size: 1rem;
+        color: #ffffff;
+        font-family: 'Noto Sans TC', sans-serif;
+
+        border-color: rgb(206, 206, 206);
+        background-color: #252525;
+    }
+
+    /********************* SEASONING *********************/
+    .SEASONING {
+        text-align: center;
+
+        margin-top: 35px;
+
+        font-size: 90%;
+        color: #ffffff;
+    }
+
+    .radio {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        margin: 60px auto;
+
+        width: 100%;
+        height: 40px;
+
+        font-size: 1.3rem;
+        color: #ffffff;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    label {
+        padding: 0 10%;
+    }
+
+    .radio input[type="radio"] {
+        display: none;
+
+    }
+
+    .radio input:checked+.button {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        height: 40px;
+        width: 100%;
+
+        border: 1.5px solid rgb(0, 0, 0);
+        border-radius: 10px;
+
+        background: #5e7380;
+        color: #fff;
+        /* cursor: default; */
+    }
+
+    .button {
+        display: grid;
+
+        height: 40px;
+
+        border: 1.5px solid rgb(0, 0, 0);
+        border-radius: 10px;
+
+        background: #f7f7f7;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background: #bbb;
+        color: #fff;
+    }
+
+    /********************* 送出 *********************/
+    .content {
+        margin: 0 auto;
+        margin-top: 110px;
+        padding-bottom: 20px;
+
+        text-align: center;
+        width: 20%;
+    }
+
+    input[type=submit] {
+        height: 40px;
+
+        background-color: #a01d1d;
+        color: rgb(253, 253, 253);
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        border: 1.5px solid rgb(0, 0, 0);
+    }
+
+    /* .news-content {
+        margin: 2px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .news-content .card {
+        width: 100%;
+
+    }
+
+    .news-content .card .cardproduct Img {
+        grid-area: CCCImg;
+        height: 170px;
+        width: 170px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 18px;
+    }
+
+    .news-content .card .cardproduct .card_H {
+        grid-area: card_H;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .news-content .card .cardproduct .card_price {
+        grid-area: card_price;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .news-content .card .cardproduct .numbtn {
+        grid-area: numbtn;
+        vertical-align: top;
+        height: 50px;
+    }
+
+    .news-content .card .cardproduct .numbtn p {
+        font-size: 30px;
+    }
+
+    .news-content .card .cardproduct {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 0.1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "CCCImg card_H"
+            "CCCImg card_price"
+            "CCCImg numbtn";
+    }
+
+    button {
+        height: 40px;
+        width: 40px;
+    }
+
+    input[type=submit] {
+        margin: 30px auto;
+        background-color: #414141;
+        color: white;
+        padding: 4px 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 30px;
+    } */
+
+
 }
